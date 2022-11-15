@@ -20,14 +20,18 @@ class MainActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
-        auth.createUserWithEmailAndPassword("abc", "123123")
-            .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
+        binding.joinButton.setOnClickListener {
+            val email = binding.email.toString()
+            val password = binding.password.toString()
 
-                } else {
+            auth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+
+                    } else {
+                    }
                 }
-            }
-
+        }
 
         binding.loginButtonMain.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
