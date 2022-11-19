@@ -6,9 +6,7 @@ import android.os.Bundle
 import com.example.chatting_video.databinding.ActivityMainBinding
 import com.example.chatting_video.model.User
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
 

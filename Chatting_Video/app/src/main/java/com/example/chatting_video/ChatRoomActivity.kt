@@ -5,7 +5,6 @@ import android.os.Bundle
 import com.example.chatting_video.databinding.ActivityChatRoomBinding
 import com.example.chatting_video.model.ChatLeftYou
 import com.example.chatting_video.model.ChatRightMe
-import com.example.chatting_video.model.UserItem
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.GroupieViewHolder
 
